@@ -1,6 +1,7 @@
 # Virtual Event Management Platform
 
-**Under Development**  
+**(Under Development)**
+
 This project is a comprehensive solution for managing virtual events, enabling organizers to create, manage, and monetize events, while offering a seamless experience for attendees. The platform supports real-time features like live streaming, chat, and audience engagement tools.
 
 ### **Microservices Architecture**
@@ -8,6 +9,19 @@ The platform follows a **microservices architecture**, where different parts of 
 
 ### **Cloud Deployment**
 The application is containerized using **Docker** and orchestrated using **Kubernetes**, ensuring that it can be easily deployed to a cloud platform like **AWS**. **AWS Elastic Beanstalk** or **ECS (Elastic Container Service)** will be used to manage the deployment, ensuring that the platform is scalable, highly available, and secure. **Jenkins** will be used for automating the CI/CD pipeline, allowing for continuous integration, testing, and deployment of new features and updates.
+
+## Tech Stack
+
+| **Category**            | **Technology**                          |
+|-------------------------|-----------------------------------------|
+| **Frontend**            | React                                   |
+| **Backend**             | Node.js with Express (Microservices)    |
+| **Database**            | PostgreSQL (Structured Data), Redis (Real-Time Updates/Caching) |
+| **Authentication**      | JWT + OAuth (Optional for Social Logins)|
+| **Real-Time**           | WebSocket/Socket.IO (Chat & Notifications) |
+| **File Storage**        | AWS S3 (Media Files & Event Recordings) |
+| **Cloud Deployment**    | Docker, Kubernetes, Jenkins, AWS (Elastic Beanstalk/ECS) |
+
 
 ## Features
 
@@ -76,15 +90,3 @@ The application is containerized using **Docker** and orchestrated using **Kuber
    - Ensure a responsive web app design.  
    - Option to add a mobile app later for an enhanced user experience.  
    **Status**: Not Started
-
-## Tech Stack
-
-| **Category**            | **Technology**                          |
-|-------------------------|-----------------------------------------|
-| **Frontend**            | React                                   |
-| **Backend**             | Node.js with Express (Microservices)    |
-| **Database**            | PostgreSQL (Structured Data), Redis (Real-Time Updates/Caching) |
-| **Authentication**      | JWT + OAuth (Optional for Social Logins)|
-| **Real-Time**           | WebSocket/Socket.IO (Chat & Notifications) |
-| **File Storage**        | AWS S3 (Media Files & Event Recordings) |
-| **Cloud Deployment**    | Docker, Kubernetes, Jenkins, AWS (Elastic Beanstalk/ECS) |
